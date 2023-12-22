@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# PrimeFlix
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Este projeto é uma aplicação React que permite aos usuários visualizar cartazes de filmes populares. Utiliza o conceito de Single Page Application (SPA) para proporcionar uma experiência de usuário suave sem recarregamentos de página.
 
-## Available Scripts
+A aplicação consome uma API de filmes para obter dados sobre os filmes e exibe seus cartazes. Os usuários podem explorar diferentes filmes e obter informações adicionais ao clicar nos cartazes, além de assistir seus trailers na plataforma "Youtube".]
 
-In the project directory, you can run:
+API
+Este projeto utiliza a API "https://www.themoviedb.org/" para obter informações sobre os filmes. Certifique-se de revisar a documentação da API para entender melhor como ela funciona.q
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `Exemplo da aplicação: `
+Ao iniciar a página, uma requisição ocorre e é puxado os filmes atuais em cartazes nos cinemas.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![image](https://github.com/matheusabf/PrimeFlix/assets/48792317/95d82744-ec86-4ec9-ae89-a0aae844a4bb)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `Após acessar`
+Ao acessar algum filme, com auxilio da key conseguimos linkar o ID do filme com o seu conteúdo da requisição, mostrando informaçõs sobre somente aquele filme. (Onde na URL fica o ID de identificação do filme.)
+![image](https://github.com/matheusabf/PrimeFlix/assets/48792317/a5d33c23-7186-4dcf-9ea9-86b81d2376a1)
 
-### `npm run build`
+### `Ao clicar em trailer`
+Ao clicar em trailer o usuário é redirecionado para o trailer no youtube, ao clicar em salvar ele pede para aplicação salvar o filme no LocalStorage, onde aparece posteriormente em "Favoritos".
+![image](https://github.com/matheusabf/PrimeFlix/assets/48792317/495d16c4-95c8-44fb-a383-d05cdad55d0f)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `Página "Meus Filmes"`
+Ao acessar a página "Meus Filmes", é mostrado todos os filmes que a pessoa salvou no LocalStorage, assim como permite também excluir e ver mais detalhes (Vendo mais detalhes ele é redirecionado novamente a página de acesso do filme contendo trailer e o botão para salvar.)
+![image](https://github.com/matheusabf/PrimeFlix/assets/48792317/f562ff2e-210e-49c1-932f-b6a1aa3b26ae)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### `Excluir Filmes`
+E por fim, ao excluir todos os filmes da lista é mostrado uma mensagem "Você não possui nenhum filme salvo :("
+![image](https://github.com/matheusabf/PrimeFlix/assets/48792317/62f565e7-ba37-45e6-b24f-3feae56f29b3)
