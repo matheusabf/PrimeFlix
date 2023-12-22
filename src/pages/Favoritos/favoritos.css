@@ -42,4 +42,8 @@
     .meus-filmes span{
         margin-right:10px;
     }
+    .meus-filmes{
+    padding-left: 10px;
+    padding-right: 10px;
+    }
 }
